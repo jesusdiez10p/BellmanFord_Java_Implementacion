@@ -3,8 +3,8 @@ package proyectoVD;
 import java.util.Scanner;
 
 public class BellmanFord {
-    private int distancias[]; //distancias almacenadas desde el nodo origen a los demas nodos
-    private int numvertices; //numero de vertices o nodos de la matriz de adyacencia
+    private final int numvertices; //numero de vertices o nodos de la matriz de adyacencia
+    private final int[] distancias; //distancias almacenadas desde el nodo origen a los demas nodos
     public static final int INFINITO = 99999; //se colocó el numero 99999 en representacion del valor infinito
 
     public BellmanFord(int numvertices) {
@@ -13,7 +13,7 @@ public class BellmanFord {
                                                 // del nodo origen al resto de nodos
     }
 
-    public void EnrutamientoBF(int valor, int matrixady[][]) {
+    public void EnrutamientoBF(int valor, int[][] matrixady) {
         for (int nodo = 1; nodo <= numvertices; nodo++) {
             distancias[nodo] = INFINITO; //se llena el array con infinitos para luego colocar el valor correspondiente
                                             //en cada uno de los valores del array.
@@ -21,6 +21,7 @@ public class BellmanFord {
             //en el caso de que el valor hacia algun nodo quede en INFINITO, significa que no exite conexion hacia
             //ese nodo. Esto se podrá apreciar en la impresion de las distancias
         }
+        
         distancias[valor] = 0; //la distancia del nodo origen a si mismo se llena con cero
 
 
@@ -43,6 +44,7 @@ public class BellmanFord {
                 }
             }
         }
+        
         //el siguiente fragmento de codigo permite evaluar la existencia de algun ciclo negativo existente en las
         //distancias almacenadas en el array
         for (int inicio = 1; inicio <= numvertices; inicio++) {
@@ -66,17 +68,17 @@ public class BellmanFord {
 
     }
     public static void main(String[] args) {
-        int numeroVertices=0;
+        int numeroVertices;
         int valor;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el numero de vertices: ");
         numeroVertices = scanner.nextInt();
-        int matrizAdj[][] = new int[numeroVertices+1][numeroVertices+1];
+        int[][] matrizAdj = new int[numeroVertices+1][numeroVertices+1];
         System.out.println("La matriz de adyacencia debera ser ingresada de la siguiente manera (respetando los espacios):\n");
         System.out.println(" [ 0 1 2 3 4 5 ] \n [ 0 1 2 3 4 5 ] \n [ 0 1 2 3 4 5 ] \n [ 0 1 2 3 4 5 ] \n [ 0 1 2 3 4 5 ] \n");
         System.out.println("Ingrese los pesos de la matriz : ");
 
-        //en la siguiente parte, se prefirió llenar con el valor infinito donde la distancia es 0, a excepcion
+        //en la siguiente parte, se prefirió llenar con el valor INFINITO donde la distancia es 0, a excepcion
         //de los casos en que la distancia es 0 porque es la distancia del nodo a si mismo (por eso el uso de la
         //funcion "continue")
         for (int inicio = 1; inicio <= numeroVertices; inicio++){
@@ -98,11 +100,5 @@ public class BellmanFord {
         scanner.close();
     }
 }
-
-
-
-
-
-
 
 
