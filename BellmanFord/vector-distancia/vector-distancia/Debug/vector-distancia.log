@@ -1,0 +1,13 @@
+﻿  Main.cpp
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(60,23): error C2131: la expresión no se evaluó como una constante
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(60,23): message : el error se debió a una lectura de una variable fuera de su duración
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(60,23): message : consulte el uso de 'V'
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(72,32): error C3863: el tipo de matriz 'int [V]' no es asignable
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(74,30): error C3863: el tipo de matriz 'int [V]' no es asignable
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(88,61): error C3863: el tipo de matriz 'int [V]' no es asignable
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(120,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(123,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(126,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(133,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(134,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020-2\proyectos\redes proyect\vector-distancia\vector-distancia\Main.cpp(135,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
